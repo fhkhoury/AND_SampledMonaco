@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1034385452509",
+    "firebase_url": "https://sampledmonaco.firebaseio.com",
+    "project_id": "sampledmonaco",
+    "storage_bucket": "sampledmonaco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034385452509:android:9d9c02431f68fe78",
+        "android_client_info": {
+          "package_name": "fiftyfive.and_sampledmonaco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034385452509-456uomlnsbeh969f4mr7dtn3cpcrl00r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fiftyfive.and_sampledmonaco",
+            "certificate_hash": "ec72caa28b47e1b253f0f1ce6c06254ec3bf4789"
+          }
+        },
+        {
+          "client_id": "1034385452509-e2b4n9f768v42n9bvt796ncl4l124cft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcXvMIKTg7vY1JKMWo6oNZciJl78n8Sx4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034385452509-e2b4n9f768v42n9bvt796ncl4l124cft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
