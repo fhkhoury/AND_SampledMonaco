@@ -2,36 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    tools:context="fiftyfive.and_sampledmonaco.Login">
-
+    tools:context="fiftyfive.and_sampledmonaco.Tutorial2">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Tutorial2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login Selection"
-        android:layout_above="@id/GetStartedButton"
+        android:text="Tutorial #2"
         android:layout_centerInParent="true"
         />
 
     <Button
-        android:id="@+id/GetStartedButton"
+        android:id="@+id/SkipButton"
         android:layout_width="209dp"
         android:layout_height="49dp"
-        android:text="Get Started"
-        android:layout_centerInParent="true"
-         />
-
-    <Button
-        android:id="@+id/LogInButton"
-        android:layout_width="209dp"
-        android:layout_height="49dp"
-        android:text="Log in"
-        android:layout_below="@id/GetStartedButton"
+        android:text="Skip"
+        android:layout_below="@id/Tutorial2"
         android:layout_centerInParent="true"
 
         />
 
-
+    <Button
+        android:id="@+id/GotIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Got It"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/SkipButton"
+        />
 
 </RelativeLayout>
