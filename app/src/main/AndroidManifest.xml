@@ -20,7 +20,9 @@
         <activity android:name=".Tutorial1" />
         <activity android:name=".Tutorial2" />
         <activity android:name=".Email_form" />
-        <activity android:name=".Tutorial3"></activity>
+        <activity android:name=".Tutorial3" />
+        <activity android:name=".Email_check" />
+        <activity android:name=".Email_success"></activity>
     </application>
 
 </manifest>
