@@ -15,20 +15,11 @@
 
 
     <Button
-        android:id="@+id/SkipButton"
-        android:layout_width="209dp"
-        android:layout_height="49dp"
-        android:text="Skip"
-        android:layout_below="@id/Tutorial1"
-        android:layout_centerInParent="true"
-        />
-
-    <Button
-        android:id="@+id/GotIt"
+        android:id="@+id/Next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Got It"
+        android:text="Next"
         android:layout_centerInParent="true"
-        android:layout_below="@id/SkipButton"
+        android:layout_below="@id/Tutorial1"
         />
 </RelativeLayout>

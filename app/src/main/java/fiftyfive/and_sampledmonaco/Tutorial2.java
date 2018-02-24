@@ -16,21 +16,11 @@ public class Tutorial2 extends AppCompatActivity {
         setContentView(R.layout.activity_tutorial2);
 
 
-        final Button skipButton = (Button) findViewById(R.id.SkipButton);
-        skipButton.setOnClickListener(new View.OnClickListener() {
+        final Button nextButton = (Button) findViewById(R.id.Next);
+        nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("INFO:", "SKIP button cliqued");
-                startActivity(new Intent(Tutorial2.this, Email_form.class));
-                finish();
-            }
-        });
-
-        final Button gotItButton = (Button) findViewById(R.id.GotIt);
-        gotItButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.i("INFO:", "GOT IT button cliqued");
+                Log.i("INFO:", "NEXT button cliqued");
                 startActivity(new Intent(Tutorial2.this, Tutorial3.class));
                 finish();
             }

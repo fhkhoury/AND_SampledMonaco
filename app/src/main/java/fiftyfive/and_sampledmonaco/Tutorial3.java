@@ -15,11 +15,11 @@ public class Tutorial3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial3);
 
-        final Button preRegisterButton = (Button) findViewById(R.id.PreRegisterButton);
-        preRegisterButton.setOnClickListener(new View.OnClickListener() {
+        final Button nextButton = (Button) findViewById(R.id.Next);
+        nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("INFO:", "PRE-REGISTER button cliqued");
+                Log.i("INFO:", "NEXT button cliqued");
                 startActivity(new Intent(Tutorial3.this, Email_form.class));
                 finish();
             }

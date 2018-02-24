@@ -14,10 +14,10 @@
 
 
     <Button
-        android:id="@+id/PreRegisterButton"
+        android:id="@+id/Next"
         android:layout_width="209dp"
         android:layout_height="49dp"
-        android:text="¨Pre-Register"
+        android:text="¨Next"
         android:layout_below="@id/Tutorial3"
         android:layout_centerInParent="true"
 
