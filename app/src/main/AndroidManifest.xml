@@ -22,7 +22,11 @@
         <activity android:name=".Email_form" />
         <activity android:name=".Tutorial3" />
         <activity android:name=".Email_check" />
-        <activity android:name=".Email_success"></activity>
+        <activity android:name=".Email_success" />
+        <activity android:name=".Phone_form" />
+        <activity android:name=".Verficiation_code_check" />
+        <activity android:name=".Phone_success" />
+        <activity android:name=".Legal_form"></activity>
     </application>
 
 </manifest>

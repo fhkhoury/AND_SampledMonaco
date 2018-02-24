@@ -9,31 +9,29 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Email_success extends AppCompatActivity {
+public class Phone_success extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_email_success);
+        setContentView(R.layout.activity_phone_success);
 
         //Get value information about user email address
-        final String eMailAddress = getIntent().getStringExtra("EMAIL_RETRIEVED");
+        final String phone = getIntent().getStringExtra("PHONE_RETRIEVED");
 
-        final TextView eMailAddressTextView = (TextView) findViewById(R.id.Email_Address);
-        eMailAddressTextView.setText(eMailAddress);
+        final TextView phoneTextView = (TextView) findViewById(R.id.Phone_Number);
+        phoneTextView.setText(phone);
 
         final Button continueButton = (Button) findViewById(R.id.ContinueButton);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.i("INFO", "CONTINUE button cliqued");
-                Intent i = new Intent(Email_success.this, Phone_form.class);
+                Intent i = new Intent(Phone_success.this, Legal_form.class);
                 startActivity(i);
                 finish();
             }
         });
-
-
 
     }
 
@@ -43,7 +41,7 @@ public class Email_success extends AppCompatActivity {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Log.i("INFO", "SYSTEM BACK button cliqued");
-            startActivity(new Intent(Email_success.this, Email_check.class));
+            startActivity(new Intent(Phone_success.this, Verficiation_code_check.class));
             return true;
         }
 

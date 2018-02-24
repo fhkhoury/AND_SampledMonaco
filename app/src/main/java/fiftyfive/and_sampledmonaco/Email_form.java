@@ -27,9 +27,14 @@ public class Email_form extends AppCompatActivity {
 
                 String eMailAddress = emailField.getText().toString();
 
+                // IF USER IS CREATING A NEW ACCOUNT
                 Intent i = new Intent(Email_form.this, Email_check.class);
                 i.putExtra("EMAIL_RETRIEVED", eMailAddress);
                 startActivity(i);
+
+                // IF USER HAS ALREADY AN ACCOUNT
+                //Intent j = new Intent(Email_form.this, Email_check.class);
+                //startActivity(j);
             }
         });
     }

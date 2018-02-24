@@ -2,41 +2,41 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    tools:context="fiftyfive.and_sampledmonaco.Email_success">
+    tools:context="fiftyfive.and_sampledmonaco.Phone_form">
 
     <TextView
-        android:id="@+id/Email_Success"
+        android:id="@+id/Phone_Form"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email Success"
+        android:text="Phone Form"
         android:layout_centerInParent="true"
         />
 
     <TextView
-        android:id="@+id/Email_Address"
+        android:id="@+id/Phone_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email_address"
-        android:layout_below="@id/Email_Success"
+        android:text="Your Phone Number"
+        android:layout_below="@id/Phone_Form"
         android:layout_centerInParent="true"
         />
 
-    <TextView
-        android:id="@+id/Email_Confirmation_Text"
+    <EditText
+        android:id="@+id/Phone_Field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your email address is confirmed"
-        android:layout_below="@id/Email_Address"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_below="@id/Phone_Title"
         android:layout_centerInParent="true"
         />
 
     <Button
-        android:id="@+id/ContinueButton"
-        android:layout_width="209dp"
-        android:layout_height="49dp"
-        android:text="Tap here to continue"
-        android:layout_below="@id/Email_Confirmation_Text"
+        android:id="@+id/SendVerificationCodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Verification Code"
+        android:layout_below="@id/Phone_Field"
         android:layout_centerInParent="true"
         />
-
 </RelativeLayout>

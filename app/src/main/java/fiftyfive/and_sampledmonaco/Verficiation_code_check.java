@@ -10,27 +10,27 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Email_check extends AppCompatActivity {
+public class Verficiation_code_check extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_email_check);
+        setContentView(R.layout.activity_verficiation_code_check);
 
-        //Get value information about user email
-        final String eMailAddress = getIntent().getStringExtra("EMAIL_RETRIEVED");
+        //Get value information about user phone number
+        final String phone = getIntent().getStringExtra("PHONE_RETRIEVED");
 
-        final TextView eMailAddressTextView = (TextView) findViewById(R.id.Email_Address);
-        eMailAddressTextView.setText(eMailAddress);
+        final TextView phoneTextView = (TextView) findViewById(R.id.phoneNumber);
+        phoneTextView.setText(phone);
 
-        final Button openMailButton = (Button) findViewById(R.id.OpenEmailButton);
-        openMailButton.setOnClickListener(new View.OnClickListener() {
+        final Button continueButton = (Button) findViewById(R.id.ContinueButton);
+        continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("INFO", "OPEN MAIL button cliqued");
+                Log.i("INFO", "CONTINUE button cliqued");
 
-                Intent i = new Intent(Email_check.this, Email_success.class);
-                i.putExtra("EMAIL_RETRIEVED", eMailAddress);
+                Intent i = new Intent(Verficiation_code_check.this, Phone_success.class);
+                i.putExtra("PHONE_RETRIEVED", phone);
                 startActivity(i);
             }
         });
@@ -40,7 +40,7 @@ public class Email_check extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("INFO", "RESEND button cliqued");
-                final Toast toast = Toast.makeText(Email_check.this, "The Magic Link has been resent!", Toast.LENGTH_SHORT);
+                final Toast toast = Toast.makeText(Verficiation_code_check.this, "The Verification code has been resent!", Toast.LENGTH_SHORT);
                 toast.show();
 
             }
@@ -55,7 +55,7 @@ public class Email_check extends AppCompatActivity {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Log.i("INFO", "SYSTEM BACK button cliqued");
-            startActivity(new Intent(Email_check.this, Email_form.class));
+            startActivity(new Intent(Verficiation_code_check.this, Phone_form.class));
             return true;
         }
 
