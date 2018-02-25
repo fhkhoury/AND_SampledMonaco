@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
     tools:context="fiftyfive.and_sampledmonaco.Legal_form">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/Legal_Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Legal Form"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/Legal_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Government regulations require us to know more about you before opening an account"
+        android:layout_below="@id/Legal_Form"
+        android:layout_centerInParent="true"
+        />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Accept the terms and conditions"
+        android:layout_below="@id/Legal_Title"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/termsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms ans conditions"
+        android:layout_below="@id/checkBox"
+        android:layout_centerInParent="true"/>/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive important updates and alerts"
+        android:layout_below="@id/termsButton"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/PreRegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pre-register"
+        android:layout_below="@id/checkBox2"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

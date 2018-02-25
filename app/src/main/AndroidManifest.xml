@@ -26,7 +26,9 @@
         <activity android:name=".Phone_form" />
         <activity android:name=".Verficiation_code_check" />
         <activity android:name=".Phone_success" />
-        <activity android:name=".Legal_form"></activity>
+        <activity android:name=".Legal_form" />
+        <activity android:name=".Terms_and_conditions" />
+        <activity android:name=".Id_name"></activity>
     </application>
 
 </manifest>
