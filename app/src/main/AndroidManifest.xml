@@ -28,7 +28,11 @@
         <activity android:name=".Phone_success" />
         <activity android:name=".Legal_form" />
         <activity android:name=".Terms_and_conditions" />
-        <activity android:name=".Id_name"></activity>
+        <activity android:name=".Id_name" />
+        <activity android:name=".Id_scan" />
+        <activity android:name=".Id_selfie" />
+        <activity android:name=".Id_success" />
+        <activity android:name=".Reserve_your_card"></activity>
     </application>
 
 </manifest>

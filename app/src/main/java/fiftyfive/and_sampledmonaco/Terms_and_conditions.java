@@ -21,7 +21,6 @@ public class Terms_and_conditions extends AppCompatActivity {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Log.i("INFO", "SYSTEM BACK button cliqued");
             startActivity(new Intent(Terms_and_conditions.this, Legal_form.class));
-            finish();
             return true;
         }
 

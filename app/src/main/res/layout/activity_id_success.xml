@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context="fiftyfive.and_sampledmonaco.Id_success">
+
+    <TextView
+        android:id="@+id/Id_Success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Success"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email_address"
+        android:layout_below="@id/Id_Success"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/SuccessText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success! You're now on the waitlist for a monaco card."
+        android:layout_below="@id/Name"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:text="Tap here to continue"
+        android:layout_below="@id/SuccessText"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

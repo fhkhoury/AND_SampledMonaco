@@ -7,28 +7,27 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-public class Id_name extends AppCompatActivity {
+public class Id_scan extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_id_name);
+        setContentView(R.layout.activity_id_scan);
 
-        final EditText nameField = (EditText) findViewById(R.id.name_field);
+        //Get value information about user name
+        final String name = getIntent().getStringExtra("NAME_RETRIEVED");
 
-        Button nextButton = (Button) findViewById(R.id.NextButton);
-        nextButton.setOnClickListener(new View.OnClickListener() {
+        final Button continueButton = (Button) findViewById(R.id.ContinueButton);
+        continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("INFO:", "NEXT button cliqued");
+                Log.i("INFO:", "CONTINUE button cliqued");
 
-                String name = nameField.getText().toString();
-
-                Intent i = new Intent(Id_name.this, Id_scan.class);
+                Intent i = new Intent(Id_scan.this, Id_selfie.class);
                 i.putExtra("NAME_RETRIEVED", name);
                 startActivity(i);
+
             }
         });
     }
@@ -39,12 +38,10 @@ public class Id_name extends AppCompatActivity {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Log.i("INFO", "SYSTEM BACK button cliqued");
-            startActivity(new Intent(Id_name.this, Legal_form.class));
+            startActivity(new Intent(Id_scan.this, Id_name.class));
             return true;
         }
 
         return false;
     }
-
-
 }
