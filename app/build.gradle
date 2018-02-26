@@ -28,6 +28,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     // FIrebase SDK
     compile 'com.google.firebase:firebase-core:11.8.0'
+    // Google Tag Manager SDK
+    compile 'com.google.android.gms:play-services-tagmanager:11.8.0'
 
 }
 
