@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context="fiftyfive.and_sampledmonaco.Phone_success">
+
+    <TextView
+        android:id="@+id/Phone_Success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Success"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/Phone_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone_Number"
+        android:layout_below="@id/Phone_Success"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/Phone_Confirmation_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your phone number has been verified "
+        android:layout_below="@id/Phone_Number"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:text="Tap here to continue"
+        android:layout_below="@id/Phone_Confirmation_Text"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

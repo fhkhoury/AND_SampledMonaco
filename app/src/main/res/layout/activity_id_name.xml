@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context="fiftyfive.and_sampledmonaco.Id_name">
+
+    <TextView
+        android:id="@+id/Id_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id_name"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/Legal_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full legal name"
+        android:layout_below="@id/Id_name"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_below="@id/Legal_Name"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@id/name_field"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

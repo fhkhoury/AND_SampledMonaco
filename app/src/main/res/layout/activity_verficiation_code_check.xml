@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context="fiftyfive.and_sampledmonaco.Verficiation_code_check">
+
+
+    <TextView
+        android:id="@+id/Verification_Code_Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification_code_check"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@id/Verification_Code_Check"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/Code_Field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@id/phoneNumber"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_below="@id/Code_Field"
+        android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:id="@+id/ResendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend"
+        android:layout_below="@id/ContinueButton"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

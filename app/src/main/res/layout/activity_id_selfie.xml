@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context="fiftyfive.and_sampledmonaco.Id_selfie">
+
+    <TextView
+        android:id="@+id/Id_Selfie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a selfie"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_below="@id/Id_Selfie"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

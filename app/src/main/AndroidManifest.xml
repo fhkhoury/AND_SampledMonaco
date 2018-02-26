@@ -16,7 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"></activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Tutorial1" />
+        <activity android:name=".Tutorial2" />
+        <activity android:name=".Email_form" />
+        <activity android:name=".Tutorial3" />
+        <activity android:name=".Email_check" />
+        <activity android:name=".Email_success" />
+        <activity android:name=".Phone_form" />
+        <activity android:name=".Verficiation_code_check" />
+        <activity android:name=".Phone_success" />
+        <activity android:name=".Legal_form" />
+        <activity android:name=".Terms_and_conditions" />
+        <activity android:name=".Id_name" />
+        <activity android:name=".Id_scan" />
+        <activity android:name=".Id_selfie" />
+        <activity android:name=".Id_success" />
+        <activity android:name=".Reserve_your_card" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Card_selection" />
+        <activity android:name=".Reserved_success"></activity>
     </application>
 
 </manifest>

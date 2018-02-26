@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AND_SampledMonaco</string>
+    <string name="title_activity_email_form">Email_form</string>
 </resources>
