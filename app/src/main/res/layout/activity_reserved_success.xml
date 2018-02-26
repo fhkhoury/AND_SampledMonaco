@@ -2,30 +2,38 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    tools:context="fiftyfive.and_sampledmonaco.Reserve_your_card">
+    tools:context="fiftyfive.and_sampledmonaco.Reserved_success">
 
     <TextView
-        android:id="@+id/Reserve_Card"
+        android:id="@+id/Reserved_Success"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reserve your card"
         android:layout_centerInParent="true"
         />
 
+    <TextView
+        android:id="@+id/ReservedCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/Reserved_Success"
+        android:layout_centerInParent="true"/>
+
     <Button
         android:id="@+id/SettingsButton"
         android:layout_width="209dp"
         android:layout_height="49dp"
         android:text="Settings"
-        android:layout_below="@id/Reserve_Card"
+        android:layout_below="@id/ReservedCard"
         android:layout_centerInParent="true"
         />
 
     <Button
-        android:id="@+id/OptionsButton"
+        android:id="@+id/DetailsButton"
         android:layout_width="209dp"
         android:layout_height="49dp"
-        android:text="See options"
+        android:text="See details"
         android:layout_below="@id/SettingsButton"
         android:layout_centerInParent="true"
         />
@@ -35,7 +43,7 @@
         android:layout_width="209dp"
         android:layout_height="49dp"
         android:text="Invite Friends"
-        android:layout_below="@id/OptionsButton"
+        android:layout_below="@id/DetailsButton"
         android:layout_centerInParent="true"
         />
 

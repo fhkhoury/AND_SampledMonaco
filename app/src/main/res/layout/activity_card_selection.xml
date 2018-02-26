@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context="fiftyfive.and_sampledmonaco.Card_selection">
+
+    <TextView
+        android:id="@+id/Card_Selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserve your card"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/MidnightBlueButton"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:text="Get Midnight Blue"
+        android:layout_below="@id/Card_Selection"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/RubySteelButton"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:text="Get Ruby Steel"
+        android:layout_below="@id/MidnightBlueButton"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/PreciousMetalPinkButton"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:text="Get Precious Metal Pink"
+        android:layout_below="@id/RubySteelButton"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/PreciousMetalGrayButton"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:text="Get Precious Metal Gray"
+        android:layout_below="@id/PreciousMetalPinkButton"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/ObsidianBlackButton"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:text="Get Obsidian Black"
+        android:layout_below="@id/PreciousMetalGrayButton"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

@@ -32,7 +32,10 @@
         <activity android:name=".Id_scan" />
         <activity android:name=".Id_selfie" />
         <activity android:name=".Id_success" />
-        <activity android:name=".Reserve_your_card"></activity>
+        <activity android:name=".Reserve_your_card" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Card_selection" />
+        <activity android:name=".Reserved_success"></activity>
     </application>
 
 </manifest>
